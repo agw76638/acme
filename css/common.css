@@ -40,6 +40,9 @@ body {
 .text-heading-xl {
   font-size: var(--heading--x-l);
   line-height: calc(var(--base-unit) * 3);
+  color: var(--hero--title);
+  text-transform: uppercase;
+  letter-spacing: 2%;
 }
 
 .text-heading-s {
@@ -50,6 +53,7 @@ body {
 .text-body-l {
   font-size: var(--body--l);
   line-height: var(--base-unit);
+  font-weight: 300;
 }
 
 .text-body-m-plus {
@@ -88,6 +92,10 @@ body {
 /* 웹 요소 */
 .btn-primary {
   background-color: var(--primary);
+}
+.btn.big {
+  height: calc(var(--base-unit) * 2);
+  padding: 0 30px;
 }
 
 /* 폼 요소 */
