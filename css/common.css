@@ -1,5 +1,6 @@
 @import url('normalize.css');
 @import url('reset.css');
+@import url('flex-utility.css');
 :root {
   /* Layout */
   --base-unit: 27px;
@@ -55,6 +56,11 @@ body {
   font-size: var(--body--l);
   line-height: var(--base-unit);
 }
+.text-nav {
+  font-size: var(--nav--item);
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
 /* 링크 버튼 */
 .btn {
@@ -69,6 +75,9 @@ body {
   font-size: var(--button---secondary);
   font-weight: bold;
   text-transform: uppercase;
+}
+.btn .material-icons {
+  font-size: 14px;
 }
 
 .btn-primary {
@@ -124,4 +133,22 @@ form button {
 }
 .inner-pd {
   padding: calc(var(--base-unit) * 3) 0;
+}
+
+/* 헤더 */
+body > header {
+  background-color: var(--white);
+  padding: var(--base-unit) 0;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo span {
+  position: absolute;
+  clip-path: inset(50%);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+header nav ul {
+  gap: 10px;
 }
