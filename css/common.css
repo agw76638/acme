@@ -75,3 +75,32 @@ body {
   background-color: var(--primary);
   color: var(--secondary);
 }
+
+/* 웹 요소 */
+.btn-primary {
+  background-color: var(--primary);
+}
+
+/* 폼 요소 */
+.hero {
+  background-color: var(--hero);
+}
+
+form {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+form .field {
+  height: calc(var(--base-unit) * 2);
+  background-color: var(--white);
+  border-radius: 3px;
+  padding: 0 20px;
+  display: flex;
+  color: var(--light--gray);
+}
+
+form .field input::placeholder {
+  color: var(--super--light--gray);
+}
