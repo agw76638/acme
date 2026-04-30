@@ -1,0 +1,33 @@
+.qnalist {
+  width: 750px;
+  margin: 0 auto;
+}
+.qnalist li.active h4 span {
+  opacity: 1;
+  transform: rotate(180deg);
+}
+
+.qnalist h4 {
+  display: flex;
+  height: calc(var(--base-unit) * 2);
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--super--light--gray);
+}
+.qnalist h4 span {
+  opacity: 0.2;
+  color: #000;
+}
+.qnalist .answer {
+  display: flex;
+  height: 0;
+  padding: 0 20px;
+  flex-direction: column;
+  gap: 27px;
+  overflow: hidden;
+}
+.qnalist li.active .answer {
+  height: auto;
+  padding: 20px 20px 30px;
+}

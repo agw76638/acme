@@ -112,6 +112,9 @@ form {
   flex-direction: column;
   gap: 10px;
 }
+form .field label {
+  display: flex;
+}
 form .field {
   height: calc(var(--base-unit) * 2);
   background-color: var(--white);
@@ -119,6 +122,15 @@ form .field {
   padding: 0 20px;
   display: flex;
   color: var(--light--gray);
+}
+form .field input {
+  font-style: italic;
+  color: var(--black);
+  width: 100%;
+  outline: none;
+}
+form .field:focus-within {
+  box-shadow: inset 0 0 5px rgba(72, 0, 255, 0.7);
 }
 
 form .field input::placeholder {
@@ -157,6 +169,10 @@ hr {
   color: var(--primary);
 }
 
+section .header {
+  margin-bottom: calc(var(--base-unit) * 2);
+}
+
 /* 헤더 */
 body > header {
   background-color: var(--white);
@@ -191,6 +207,10 @@ header nav ul {
   flex-direction: column;
   align-items: center;
   gap: var(--base-unit);
+}
+.slidecontainer li > p {
+  width: 700px;
+  text-align: center;
 }
 .slidewrapper button {
   width: 45px;
