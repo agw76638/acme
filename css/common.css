@@ -54,11 +54,14 @@ body {
   font-size: var(--body--l);
   line-height: var(--base-unit);
   font-weight: 300;
+  text-align: center;
 }
 
 .text-body-m-plus {
   font-size: var(--body--l);
   line-height: var(--base-unit);
+  text-align: center;
+  color: var(--light--gray);
 }
 .text-nav {
   font-size: var(--nav--item);
@@ -200,4 +203,13 @@ header nav ul {
 }
 .slidewrapper button.next {
   right: 0;
+}
+
+/* CTA */
+.cta {
+  background-color: var(--c-t-a);
+}
+
+.cta h3 {
+  columns: var(--white);
 }
